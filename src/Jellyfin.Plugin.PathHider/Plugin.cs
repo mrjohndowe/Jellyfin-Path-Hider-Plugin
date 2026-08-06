@@ -11,7 +11,7 @@ namespace Jellyfin.Plugin.PathHider;
 public sealed class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
 {
     /// <summary>
-    /// Stable plugin identifier. This must match the identifier used by the admin page.
+    /// Stable plugin identifier.
     /// </summary>
     public static readonly Guid PluginId = Guid.Parse("96388552-61d4-4f91-a0ab-c72f32a864b1");
 
@@ -36,15 +36,24 @@ public sealed class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     public override string Name => "Path Hider";
 
     /// <inheritdoc />
-    public override string Description => "Excludes configured files and folders from Jellyfin library scans.";
+    public override string Description =>
+        "Excludes configured files and folders from Jellyfin library scans.";
 
     /// <inheritdoc />
     public IEnumerable<PluginPageInfo> GetPages()
     {
         yield return new PluginPageInfo
         {
-            Name = Name,
-            EmbeddedResourcePath = $"{GetType().Namespace}.Configuration.configPage.html"
+            // A route-safe identifier is more reliable than a display name containing spaces.
+            Name = "PathHiderConfig",
+
+            // Use an explicit resource name so MSBuild and Jellyfin agree on the path.
+            EmbeddedResourcePath =
+                "Jellyfin.Plugin.PathHider.Configuration.configPage.html",
+
+            // Also expose the page in the Dashboard menu. Jellyfin may still show a
+            // Settings button on the plugin details page, depending on web-client version.
+            EnableInMainMenu = true
         };
     }
 }

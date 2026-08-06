@@ -6,7 +6,11 @@
   "name": "Path Hider",
   "overview": "Hide configured files and folders from library scans.",
   "owner": "local",
-  "targetAbi": "10.10.0.0",
+  "targetAbi": "10.10.7.0",
   "timestamp": "2026-08-06T03:29:00.0000000Z",
-  "version": "1.0.0.0"
+  "version": "1.0.1.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": "C:\\ProgramData\\Jellyfin\\Server\\plugins\\Jellyfin.Plugin.PathHider_1.0.1.0\\logo.png",
+  "assemblies": []
 }

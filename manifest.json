@@ -9,10 +9,10 @@
     "imageUrl": "https://raw.githubusercontent.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/main/logo.png",
     "versions": [
       {
-        "version": "1.0.0.0",
+        "version": "1.0.1.0",
         "changelog": "Initial release.",
         "targetAbi": "10.10.7.0",
-        "sourceUrl": "https://github.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/releases/download/v1.0.0.0/Jellyfin.Plugin.PathHider_1.0.0.0.zip",
+        "sourceUrl": "https://github.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/releases/download/v1.0.1.0/Jellyfin.Plugin.PathHider_1.0.1.0.zip",
         "checksum": "PUT_THE_LOWERCASE_MD5_CHECKSUM_HERE",
         "timestamp": "2026-08-06T03:40:00Z"
       }
