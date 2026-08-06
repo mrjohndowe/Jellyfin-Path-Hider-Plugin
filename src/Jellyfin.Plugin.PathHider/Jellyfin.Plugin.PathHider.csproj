@@ -3,8 +3,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Jellyfin.Plugin.PathHider</RootNamespace>
     <AssemblyName>Jellyfin.Plugin.PathHider</AssemblyName>
-    <Version>1.0.1.0</Version>
+    <Version>1.0.2.0</Version>
     <Description>Hide configured files and folders from Jellyfin library scans.</Description>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
