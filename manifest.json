@@ -13,7 +13,7 @@
         "changelog": "Initial release.",
         "targetAbi": "10.10.7.0",
         "sourceUrl": "https://github.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/releases/download/v1.0.1.0/Jellyfin.Plugin.PathHider_1.0.1.0.zip",
-        "checksum": "PUT_THE_LOWERCASE_MD5_CHECKSUM_HERE",
+        "checksum": "f7f51ac9b6a3d640e34f3f60ca6962e0",
         "timestamp": "2026-08-06T03:40:00Z"
       }
     ]
