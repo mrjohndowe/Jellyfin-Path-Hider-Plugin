@@ -1,0 +1,15 @@
+---
+name: "Path Hider"
+guid: "96388552-61d4-4f91-a0ab-c72f32a864b1"
+version: "1.0.0.0"
+targetAbi: "10.10.0.0"
+framework: "net8.0"
+owner: "local"
+overview: "Hide configured files and folders from library scans."
+description: >
+  Adds an admin-configurable resolver ignore rule supporting exact paths,
+  names, and glob patterns. Matching entries are excluded at scan time.
+category: "General"
+artifacts:
+  - "Jellyfin.Plugin.PathHider.dll"
+changelog: "Initial release."

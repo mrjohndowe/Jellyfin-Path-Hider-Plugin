@@ -1,0 +1,102 @@
+<div id="PathHiderConfigPage"
+     data-role="page"
+     class="page type-interior pluginConfigurationPage"
+     data-require="emby-input,emby-button,emby-checkbox">
+    <div data-role="content">
+        <div class="content-primary">
+            <form id="PathHiderConfigForm">
+                <div class="verticalSection">
+                    <h2 class="sectionTitle">Path Hider</h2>
+                    <p>
+                        Exclude matching files and folders when Jellyfin scans libraries.
+                        The plugin does not delete, move, or rename anything.
+                    </p>
+
+                    <label class="checkboxContainer">
+                        <input id="Enabled" type="checkbox" is="emby-checkbox" />
+                        <span>Enable scan filtering</span>
+                    </label>
+
+                    <div class="inputContainer">
+                        <label class="inputLabel inputLabelUnfocused" for="Rules">Hide rules</label>
+                        <textarea id="Rules"
+                                  is="emby-textarea"
+                                  class="emby-textarea"
+                                  rows="14"
+                                  spellcheck="false"
+                                  placeholder="folder:/media/private&#10;file:**/*-workprint.mkv&#10;folder:Extras"></textarea>
+                        <div class="fieldDescription">
+                            One rule per line. Use exact names or absolute paths. Wildcards:
+                            <code>*</code> matches within one path segment,
+                            <code>?</code> matches one character, and
+                            <code>**</code> crosses folders. Prefix a rule with
+                            <code>file:</code> or <code>folder:</code> to limit its target.
+                            Lines beginning with <code>#</code> are comments.
+                        </div>
+                    </div>
+
+                    <label class="checkboxContainer">
+                        <input id="CaseSensitive" type="checkbox" is="emby-checkbox" />
+                        <span>Use case-sensitive matching</span>
+                    </label>
+
+                    <label class="checkboxContainer">
+                        <input id="LogMatches" type="checkbox" is="emby-checkbox" />
+                        <span>Log excluded paths</span>
+                    </label>
+
+                    <div>
+                        <button is="emby-button"
+                                type="submit"
+                                class="raised button-submit block emby-button">
+                            <span>Save</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            const pluginId = '96388552-61d4-4f91-a0ab-c72f32a864b1';
+            const page = document.querySelector('#PathHiderConfigPage');
+            const form = page.querySelector('#PathHiderConfigForm');
+
+            page.addEventListener('pageshow', async function () {
+                Dashboard.showLoadingMsg();
+
+                try {
+                    const config = await ApiClient.getPluginConfiguration(pluginId);
+                    page.querySelector('#Enabled').checked = config.Enabled !== false;
+                    page.querySelector('#Rules').value = config.Rules || '';
+                    page.querySelector('#CaseSensitive').checked = config.CaseSensitive === true;
+                    page.querySelector('#LogMatches').checked = config.LogMatches === true;
+                } finally {
+                    Dashboard.hideLoadingMsg();
+                }
+            });
+
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+                Dashboard.showLoadingMsg();
+
+                try {
+                    const config = await ApiClient.getPluginConfiguration(pluginId);
+                    config.Enabled = page.querySelector('#Enabled').checked;
+                    config.Rules = page.querySelector('#Rules').value;
+                    config.CaseSensitive = page.querySelector('#CaseSensitive').checked;
+                    config.LogMatches = page.querySelector('#LogMatches').checked;
+
+                    const result = await ApiClient.updatePluginConfiguration(pluginId, config);
+                    Dashboard.processPluginConfigurationUpdateResult(result);
+                } catch (error) {
+                    Dashboard.hideLoadingMsg();
+                    throw error;
+                }
+
+                return false;
+            });
+        }());
+    </script>
+</div>

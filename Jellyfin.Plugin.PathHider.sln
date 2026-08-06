@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.PathHider", "src\Jellyfin.Plugin.PathHider\Jellyfin.Plugin.PathHider.csproj", "{B3BE15B8-98A1-4C93-AD78-7D6D9206D202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.PathHider.Tests", "tests\Jellyfin.Plugin.PathHider.Tests\Jellyfin.Plugin.PathHider.Tests.csproj", "{4894363F-EAE6-4B44-B8D6-3E22D119E947}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {B3BE15B8-98A1-4C93-AD78-7D6D9206D202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {B3BE15B8-98A1-4C93-AD78-7D6D9206D202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {B3BE15B8-98A1-4C93-AD78-7D6D9206D202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {B3BE15B8-98A1-4C93-AD78-7D6D9206D202}.Release|Any CPU.Build.0 = Release|Any CPU
+        {4894363F-EAE6-4B44-B8D6-3E22D119E947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {4894363F-EAE6-4B44-B8D6-3E22D119E947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {4894363F-EAE6-4B44-B8D6-3E22D119E947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {4894363F-EAE6-4B44-B8D6-3E22D119E947}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal
