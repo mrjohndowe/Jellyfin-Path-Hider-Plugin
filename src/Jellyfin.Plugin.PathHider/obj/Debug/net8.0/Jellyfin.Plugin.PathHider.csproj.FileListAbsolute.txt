@@ -1,0 +1,13 @@
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\bin\Debug\net8.0\Jellyfin.Plugin.PathHider.deps.json
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\bin\Debug\net8.0\Jellyfin.Plugin.PathHider.dll
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\bin\Debug\net8.0\Jellyfin.Plugin.PathHider.pdb
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.csproj.AssemblyReference.cache
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.GeneratedMSBuildEditorConfig.editorconfig
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.AssemblyInfoInputs.cache
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.AssemblyInfo.cs
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.csproj.CoreCompileInputs.cache
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.sourcelink.json
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.dll
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\refint\Jellyfin.Plugin.PathHider.dll
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\Jellyfin.Plugin.PathHider.pdb
+G:\.gitClones\Jellyfin-Path-Hider-Plugin\src\Jellyfin.Plugin.PathHider\obj\Debug\net8.0\ref\Jellyfin.Plugin.PathHider.dll

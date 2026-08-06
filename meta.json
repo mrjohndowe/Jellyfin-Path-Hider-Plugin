@@ -1,0 +1,12 @@
+{
+  "category": "General",
+  "changelog": "Initial release.",
+  "description": "Adds configurable file and folder ignore rules so matching paths are excluded from Jellyfin library scans.",
+  "guid": "96388552-61d4-4f91-a0ab-c72f32a864b1",
+  "name": "Path Hider",
+  "overview": "Hide configured files and folders from library scans.",
+  "owner": "local",
+  "targetAbi": "10.10.0.0",
+  "timestamp": "2026-08-06T03:29:00.0000000Z",
+  "version": "1.0.0.0"
+}

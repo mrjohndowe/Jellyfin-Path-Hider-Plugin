@@ -1,0 +1,21 @@
+[
+  {
+    "guid": "96388552-61d4-4f91-a0ab-c72f32a864b1",
+    "name": "Path Hider",
+    "description": "Adds configurable file and folder ignore rules so matching paths are excluded from Jellyfin library scans.",
+    "overview": "Hide configured files and folders from library scans.",
+    "owner": "MRJOHNDOWE",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/main/logo.png",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "changelog": "Initial release.",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/MRJOHNDOWE/Jellyfin-Path-Hider-Plugin/releases/download/v1.0.0.0/Jellyfin.Plugin.PathHider_1.0.0.0.zip",
+        "checksum": "PUT_THE_LOWERCASE_MD5_CHECKSUM_HERE",
+        "timestamp": "2026-08-06T03:40:00Z"
+      }
+    ]
+  }
+]
